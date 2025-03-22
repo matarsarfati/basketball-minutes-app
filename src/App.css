@@ -1,0 +1,82 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  margin: 2px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #115293;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  min-width: 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+input[type="text"] {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.orange {
+  color: orange;
+  font-weight: bold;
+  text-align: center;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sync-clock {
+  text-align: center;
+  margin-bottom: 15px;
+}
