@@ -1,0 +1,33 @@
+.exercise-table {
+    direction: rtl;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .exercise-table th,
+  .exercise-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .exercise-image {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 5px auto 0;
+  }
+  
+  .no-image {
+    color: gray;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .muscle-cell {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }

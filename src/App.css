@@ -1,82 +1,159 @@
+/* ============================== */
+/* עיצוב לדף בדיקת דקות משחק */
+/* ============================== */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f5f7fa;
+}
+
 .App {
-  font-family: 'Arial', sans-serif;
+  direction: rtl;
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
 }
 
-h1, h2, h3 {
+/* כותרת */
+.App h1 {
+  font-size: 32px;
   text-align: center;
-  color: #333;
-}
-
-button {
-  margin: 2px;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #1976d2;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #115293;
-}
-
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  color: #1e3a8a;
   margin-bottom: 20px;
 }
 
-.section {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: #f9f9f9;
-  min-width: 200px;
-}
-
+/* טבלאות */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-input[type="text"] {
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid #ccc;
+thead {
+  background-color: #e3ecf9;
+  color: #222;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* כפתורים מרכזיים */
+.main-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.main-controls button {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2563eb;
+  color: white;
+  border: none;
   border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-input[type="checkbox"] {
-  margin-left: 10px;
+.main-controls button:hover {
+  background-color: #1e40af;
 }
 
+/* כפתור חזרה מהפסק זמן */
+.return-button {
+  background-color: #16a34a !important;
+}
+
+.return-button:hover {
+  background-color: #15803d !important;
+}
+
+/* כפתורים קטנים */
+button {
+  padding: 6px 10px;
+  font-size: 13px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button.hide-toggle {
+  background-color: #f3f3f3;
+  font-size: 12px;
+}
+
+button.hide-toggle:hover {
+  background-color: #ddd;
+}
+
+/* אזור שליטה צדדי */
+.sidebar-controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-controls button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.sidebar-controls button:hover {
+  background-color: #eee;
+}
+
+/* תגים מיוחדים */
 .orange {
   color: orange;
   font-weight: bold;
-  text-align: center;
+  font-size: 18px;
 }
 
 .green {
   color: green;
   font-weight: bold;
-  text-align: center;
+  font-size: 18px;
 }
 
-.sync-clock {
-  text-align: center;
-  margin-bottom: 15px;
+.star {
+  color: red;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* קלטים */
+input[type="text"], input[type="number"] {
+  padding: 6px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
